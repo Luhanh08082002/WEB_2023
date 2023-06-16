@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dongho{
+            width: 300px;
+            height: 300px;
+            background: gray;
+            border-radius: 7px;
+            box-shadow:silver;
+            margin: 0 auto;
+            margin-top: 100px;    
+           }
+
+           body {
+    background: black;
+}
+
+.clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #17D4FE;
+    font-size: 60px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+   
+
+
+}
+    </style>
+</head>
+
+<body>
+    <div class="dongho">
+        <div id="MyClockDisplay" class="clock" onload="showTime()"></div> </br>
+        <div id="MyClock" class="" onload="showTime()"></div>
+
+    </div>
+</body>
+<script>
+    function showTime(){
+    var date = new Date();
+    // h nè
+    var h = date.getHours(); // 0 - 23
+    var m = date.getMinutes(); // 0 - 59
+    var s = date.getSeconds(); // 0 - 59
+    var hs = date.getMilliseconds();// 0 -999
+    var session = "AM";
+    
+
+    // ngày tháng nè 
+    var ngayonthang = date.getDate(); // lấy ngày 1 -31 ;
+    var ngayontuan = date.getDay(); // lấy ngày trong tuần 0-6;
+    var nam = date.getFullYear(); // lấy năm đầy đủ
+    var namthieu = date.getYear();
+    var thang = date.getMonth();
+    let dayname = ['CN','T2','T3','T4','T5','T6','T7']
+    let daymonth = ['1','2','3','4','5','6','7','8','9','10','11','12']
+    if(h == 0){
+        h = 12;
+    }
+
+    
+    
+    if(h > 12){
+        h = h - 12;
+        session = "PM";
+
+    }
+    
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+   
+
+    
+    
+    var time = h + ":" + m + ":" + s +":"  + session;
+    var tm = dayname[ngayontuan] + " Ngày " + ngayonthang +" Tháng "+ daymonth[thang]  + "Năm" + nam ;
+    document.getElementById("MyClockDisplay").innerText = time;
+    document.getElementById("MyClock").innerText = tm;
+    document.getElementById("MyClockDisplay").textContent = time;
+    
+    setTimeout(showTime, 1000);
+    
+}
+
+showTime();
+</script>
+</html>

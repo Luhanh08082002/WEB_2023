@@ -1,0 +1,301 @@
+body{
+    border: 0;
+    padding: 0;
+    margin: 0;
+
+    overflow-x:hidden;
+}
+.container-full{
+    background: white;
+    height: 60px;
+    border-bottom:2px solid #DDDDDD;
+    
+}
+
+.row .logo{
+    text-align: center;
+    color: blue;
+    height: 60px;
+    line-height: 60px;
+   
+}
+#logo{
+    
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+
+}
+#search{
+    width: 320px;
+    padding: 8px 16px;
+    margin-top: 5px;
+    border-radius: 92px;
+    background: rgba(22, 24, 35, .06);
+}
+
+.ip_search{
+    font-family: "IBM Plex Sans",ProximaNova,Arial,Tahoma,PingFangSC,sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 0;
+    
+    color: rgba(22, 24, 35, 1);
+    caret-color: rgba(254, 44, 85, 1);
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    -ms-appearance: textfield;
+    appearance: textfield;
+
+    /* padding: 12px 16px;
+    border-radius: 92px;
+    background: rgba(22, 24, 35, .06); */
+}
+#search .fa-close{
+    margin-left: 20px;
+    background: rgba(22, 24, 35, .12);
+    padding: 4px;
+    border-radius: 50%;
+}
+#search .li{
+   width: 3px;
+   height: 22px;
+   color:rgba(42, 45, 59, 0.12); 
+   
+}
+#search .fa-search{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 17px 19px 16px 11px;
+    margin: -8px -16px;
+    margin-left: 20px;
+    border-left: 2px solid #DDDDDD;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+}
+#search .fa-close:hover{
+    color: red;
+}
+#search .fa-search:hover {
+    background: #CCCCCC;
+    color: #0033FF;
+    font-weight: bold;
+   
+
+}
+
+.tiktok_upload{
+
+    margin-top: 8px;
+ border-radius: 3px;
+    border: 1px solid #CCCCCC;
+    float: left;
+    display: flex;
+    margin-right: 30px;
+}
+.tiktok_upload span{
+ 
+    font-weight: bold;
+    font-size: 18px;
+    padding: 6px 16px;
+
+}
+#btn_dn_tiktok{
+    margin-top: 9px;
+    padding: 6px 16px;
+    font-weight: bold;
+    color: white;
+    background: red;
+    border-radius: 4px;
+    border: none;
+    margin-right: 35px;
+}
+.fa-ellipsis-v{
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.pesion{
+    padding:10px;
+    margin: 10px;
+    border: 1px solid #eee;
+    display:inline-block;
+}
+
+
+/* css dành sidebar */
+.sidebar{
+    margin-left: 50px;
+    height:660px;
+overflow-x:hidden;
+    overflow-y:auto;
+     
+}
+#sidebar-menu{
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 20px;
+    margin-right: 50px;
+   
+}
+.active{
+    margin-top: 20px;
+}
+#sidebar-menu .list-menu{
+    
+    padding: 8px 12px;
+    border-radius: 7px;    
+}
+#sidebar-menu .list-menu span{
+    font-size: 26px;
+    margin-right: 10px;
+}
+#sidebar-menu .list-menu:hover{
+    background: #DDDDDD ;    
+    
+}#sidebar-menu .list-menu a:hover{
+    color: #FF3366;
+}
+#sidebar-menu .list-menu a{
+    font-family: "IBM Plex Sans",ProximaNova,Arial,Tahoma,PingFangSC,sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+
+
+#sidebar-login{
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 20px;
+    margin-right: 50px;
+}
+#sidebar-login p{
+    padding: 10px;
+    color: #DDDDDD;
+    font-family: "IBM Plex Sans",ProximaNova,Arial,Tahoma,PingFangSC,sans-serif;
+
+
+}
+#sidebar-login .btn-login{
+    background: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 50px;
+    width: 100%;
+    border:1px solid #FF3366 ;
+    color: #FF3366;
+    font-family: "IBM Plex Sans",ProximaNova,Arial,Tahoma,PingFangSC,sans-serif;
+
+}
+#sidebar-login .btn-login:hover{
+    background: rgba(254, 44, 85, 0.06);
+}
+
+/* hashtag */
+#hashtag{
+    margin-left: 10px;
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 20px;
+}
+#hashtag p{
+    font-weight: 500;
+    font-size: 18px;
+    padding-top: 10px;
+}
+#hashtag .hashtag{
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+}
+#hashtag .hashtag a{
+    text-decoration: none;
+    border: 1px solid #DDDDDD;
+    padding: 2px 10px;
+    border-radius: 120px;
+    font-size: 12px;
+    margin: 5px;
+}
+#hashtag .hashtag a span{
+   font-size: 14px;
+   margin-right: 5px;
+}
+
+/* link */
+.divplaceContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 10px;
+
+}
+.divlinkContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 10px;
+
+    margin-top: 20px;
+}
+.divmoreContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 10px;
+
+    margin-top: 20px;
+}
+.divmoreContainer a{
+    padding-right: 5px;
+    text-decoration: none;
+    color: gray;
+    font-size: 16px;
+}
+.divplaceContainer a{
+    padding-right: 5px;
+   text-decoration: none;
+   color: gray;
+   font-size: 16px;
+} 
+.divlinkContainer a{
+    text-decoration: none;
+    color: gray;
+    font-size: 16px;
+ } 
+
+ .divplaceContainer a:hover{
+    color: #0033FF;
+
+ } 
+ .divlinkContainer a:hover{
+
+     color: #0033FF;
+  } 
+  .divmoreContainer a:hover{
+
+    color: #0033FF;
+ } 
+
+
+ .divfooterContainer{
+     margin-left: 10px;
+ }
+ .divfooterContainer span{
+     font-size: 22px;
+     color: gray;
+ }
+ .divfooterContainer p{
+    font-size: 14px;
+    color: gray;
+    padding-bottom: 10px;
+}

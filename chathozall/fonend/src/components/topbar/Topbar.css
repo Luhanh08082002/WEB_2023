@@ -1,0 +1,275 @@
+.topbarContainer{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    background: #DDDDDD;
+    align-items: center;
+   position: sticky;
+    top: 0;
+    z-index: 99999;
+}
+.topbarLeft{
+    flex: 3;
+}
+.topbarLeft .logo{
+    font-size: 30px;
+    color: blue;
+    font-weight: bold;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.topbarCenter{
+    flex: 5;
+}
+.topbarCenter .searchbar{
+    width: 100%;
+    height: 35px;
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.topbarCenter .searchInput{
+    width: 90%;
+    margin-left: 15px ;
+    border: none;
+
+}
+.topbarCenter .searchInput:focus{
+    outline: none;
+
+}
+.topbarCenter .searchIcon{
+    font-size: 20px !important;
+    padding-right: 10px;
+}
+
+.topbarRight{
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.topbarRight .topbarlink{
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.topbarRight .topbarIcons{
+    display: flex;
+    align-items: center;
+
+}
+
+.iconItem{
+    font-size: 22px;
+    cursor: pointer;
+    position: relative;
+}
+.notification{
+    background-color: aqua;
+    margin-top: 15px;
+    position: absolute;
+    margin-left: -200px;
+    padding: 10px 20px;
+    min-width: 270px;
+    z-index: 1;
+}
+
+.topbarIconItem{
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.topbarIconBadge{
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    top: -7px;
+    right: -5px;
+}
+.topbariconImg{
+    height: 40px;
+    line-height: 40px;
+   
+}
+
+
+.topbarImg{
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+    background-color: blue;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+
+  
+   
+}
+
+.linkker{
+    height: 20px;
+    width: 20px;
+    background-color: aqua;
+    margin-top: -20px;
+    margin-left:220px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 99999999;
+
+}
+
+.navbarmenuItem {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-top: -7px;
+    position: absolute;
+    margin-left: -200px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    min-width: 250px;
+    z-index: 1;
+   
+    
+}
+.navbarmenuItem li {
+    
+    list-style: none;
+    position: relative;
+    padding: 5px;
+}
+.navbarmenuItem li:hover{
+    background-color: gray;  
+   
+}
+
+.topusername{
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding:5px 10px;
+    margin-bottom: 20px;
+}
+.topusername img{
+    margin: 10px 10px;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   margin-right: 10px;
+   object-fit: cover;
+}
+
+
+
+/* notification */
+
+.notification{
+    
+background-color: white;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.linkker_notif{
+    height: 20px;
+    width: 20px;
+    background-color: aqua;
+    margin-top: -20px;
+    margin-left:180px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 99999999;
+
+}
+.notification_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -20px;
+}
+
+.item_menu {
+    display: flex;
+   
+}
+.item_menu div {
+    margin-right: 30px;
+}
+.item_all span {
+    font-weight: 700;
+    font-size: 16px;
+
+}
+
+
+
+.item_all{
+    padding: 6px 14px;
+}
+.item_all:hover{
+    background-color: #EEEEEE	;
+    border-radius: 7px;
+    color: 	#0000FF;
+}
+
+
+.item_Unread{
+    padding: 6px 14px;
+}
+.item_Unread span {
+    font-weight: 700;
+    font-size: 16px;
+   
+
+}
+.item_Unread:hover{
+    background-color: #EEEEEE	;
+    border-radius: 7px;
+    color: 	#0000FF;
+    
+}
+
+
+
+.compoments{
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+   padding: 10px 0;
+}
+
+.notification_user{
+    display: flex;
+    align-items: center;
+    padding: 7px 5px;
+    border-radius: 7px;
+}
+.notification_user:hover{
+    background-color: #EEEEEE;
+    
+}
+.notification_user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+.user_noti span {
+    color: gray;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+.user_noti div{
+    color: #0000FF;
+}

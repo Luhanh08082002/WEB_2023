@@ -1,0 +1,41 @@
+.shop-by-category {
+    margin: 25px 0;
+    @include md {
+        margin: 30px 0;
+    }
+    .categories {
+        // position: relative; 
+        display: flex;
+        flex-flow: wrap;
+        gap: 10px;
+        .category {
+            background-color: black;
+            width: calc(50% - 5px);
+            cursor: pointer;
+            overflow: hidden;
+            @include md {
+                width: calc(25% - 10px);
+            }
+            img {
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                display: block;
+                transition: all ease 0.3s;
+            }
+            span{
+                position: absolute;
+                top: 0; // chữ sẽ nằm lên phía trên
+                right: 0; // chữ sẽ nằm phía bên phải 
+                // left bottom tương tự
+                
+            
+            }
+            &:hover {
+                img {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}

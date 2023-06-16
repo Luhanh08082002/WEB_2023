@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mau{
+            background: black;
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="mau">
+        <h3 id="doichu">
+
+        </h3>
+        <button class="click" onclick="onchuyenmau()">click chuyển màu</button>
+    </div>
+</body>
+<script>
+    var index = 0;
+
+    function onchuyenmau(){
+        var color = ['blue','antiquewhite','saddlebrown','slategray']
+        
+        var click = document.getElementsByClassName('mau')[0]
+        click.style.background = color[index++];
+        if(index < color.length - 1){
+            index == 0;
+        }
+color[1] = [
+            'đay là màu xanh','đay là màu tiieps theo','là màu thứ ba','máu thừ tư'
+        ]
+        color[2] = [
+            'đay là màu tiieps theo','là màu thứ ba','máu thừ tư'
+        ]
+        color[2] = [
+            'là màu thứ ba','máu thừ tư'
+        ]
+        document.getElementById('doichu').innerText = color[index++]
+       
+    }
+</script>
+</html>

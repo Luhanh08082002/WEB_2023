@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F8_WEB</title>
+    <!-- reset css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,300;0,500;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../../assets/css/base.css">
+    <link rel="stylesheet" href="../../../assets/css/header/header.css">
+    <link rel="stylesheet" href="../../../assets/css/header/container.css">
+    <link rel="stylesheet" href="../../../assets/css/header/footer.css">
+    <link rel="stylesheet" href="../../../assets/css/pages/checkout.css">
+   
+    <link rel="stylesheet" href="../../../assets/font/fontawesome-free-6.3.0/fontawesome-free-6.3.0-web/css/all.css">
+
+
+</head>
+
+<body>
+
+    <div class="container__full_app">
+        <header class="header">
+            <!-- header top -->
+            <div class="header__top">
+                <div class="grid header--navbar">
+                    <ul class="header__top-navbar-list">
+                        <li class="header__top-navbar-item header--separate">
+                            <a href="tel:08788854" class="header__top-navbar-link">
+                                <i class="fa-solid fa-phone faa-wrench animated "></i>
+                                085 8788 854</a>
+                        </li>
+                        <li class="header__top-navbar-item">
+                            <a href="" class="header__top-navbar-link">
+                                <i class="fa-solid fa-envelope  faa-wrench animated"></i>
+                                luhanh08082002@gmail.com</a>
+                        </li>
+                    </ul>
+                    <ul class="header__top-navbar-list">
+                        <li class="header__top-navbar-item header--separate">
+                            <span>
+                                <i class="fa-solid fa-globe"></i>
+                                Ngôn Ngữ
+                                <i class="fa-solid fa-caret-down"></i>
+                            </span>
+                            <ul class="select__languages-list">
+                                <li class="select__languages-item">
+                                    <a href="" class="select__languages-link">
+
+                                        TIẾNG VIỆT</a>
+                                </li>
+                                <li class="select__languages-item">
+                                    <a href="" class="select__languages-link">
+
+                                        ENGLISH</a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+                        <li class="header__top-navbar-item">
+                            <span>
+                                <i class="fa-sharp fa-solid fa-car-side"></i>
+                                Theo Dõi Đơn Hàng
+                            </span>
+                            <div class="header__top-active-order">
+                                <div class="header__top-order-list">
+                                    <label class="header__top-order-lable" for="">Mã Đơn Hàng</label>
+                                    <input class="header__top-order-input" type="text"
+                                        placeholder="VD : MĐH09340328403-84">
+                                </div>
+                                <div class="header__top-order-list">
+                                    <label class="header__top-order-lable" for="">Số Điện Thoại</label>
+                                    <input class="header__top-order-input" type="text" placeholder="VD : 08587889854">
+                                </div>
+                                <button class="header__top-order-btn">Xem Trạng Thái Đơn Hàng</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- and -->
+
+            <div class="header__center">
+                <div class="header__center-logo">
+                    <a href="/" class="header__center-logo-link">
+                        <img class="header__center-logo-img"
+                            src="https://stfe.woka.io/desktop/image/logo/fado_black_v2.svg" alt="">
+                    </a>
+
+                </div>
+                <!-- tim kiem san pham -->
+                <div class="header__center-search">
+                    <div class="header__center-dropdown">
+                        <span class="dropdown__title">
+                            TỪ MỸ
+                        </span>
+                        <ul class="dropdown__title-list">
+                            <li class="dropdown__title-item">
+                                <span>TỪ NHẬT</span>
+                            </li>
+                            <li class="dropdown__title-item">
+                                <span>TỪ ĐỨC</span>
+                            </li>
+                            <li class="dropdown__title-item">
+                                <span>TỪ ANH</span>
+                            </li>
+                            <li class="dropdown__title-item">
+                                <span>TỪ GIAN HÀNG</span>
+                            </li>
+                            <li class="dropdown__title-item">
+                                <span>TỪ HÀNG CAO CẤP</span>
+                            </li>
+                            <li class="dropdown__title-item">
+                                <span>TẤT CẢ</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- input tim kiem -->
+                    <div class="header__center-search-dropdown">
+                        <input class="focus__search--dropdown" type="text"
+                            placeholder="Nhập link hoặc sản phẩm trên khắp thế giới ...">
+                        <div class="search__dropdown-history">
+                            <div class="search__dropdown-list">
+                                <div class="search__dropdown-item">
+                                    <div class="title__history-top">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <h4> Lịch sử Tìm Kiếm </h4>
+                                    </div>
+                                    <ul class="list__history-search">
+                                        <li>
+                                            <a href="">Nước Hoa Cao Cấp </a>
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </li>
+                                        <li>
+                                            <a href="">Thùng Đựng Nước </a>
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </li>
+                                        <li>
+                                            <a href="">KHoai lang để ăn</a>
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="search__dropdown-item">
+                                    <div class="title__history-top">
+                                        <i class="fa-solid fa-key"></i>
+                                        <h4>Từ khóa Phổ Biến</h4>
+                                    </div>
+
+                                    <ul class="list__popular-search">
+                                        <li>
+                                            <a href="">Nước Hoa Cao Cấp</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="">Thùng Đựng Nước</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="">KHoai lang để ăn</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="">KHoai lang để ăn</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="">KHoai lang để ăn</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="">KHoai lang để ăn</a>
+
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- end input -->
+                    <button class="submit__btn_search">
+                        <!-- <span class="submit__btn-bg"></span> -->
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <!-- and  tim kiem sp-->
+                <div class="header__center-user">
+                    <ul class="header__center-user-list">
+                        <!-- <li class="header__center-user-item">
+                            <a href="" class="header__log">
+                                <i class="fa-solid fa-user-large"></i>
+                                ĐĂNG NHẬP</a>
+                        </li> -->
+                        <li class="header__center-user-item">
+                            <div class="header__log-user">
+                                <img class="header__log-user-img"
+                                    src="https://daotao.vku.udn.vn/uploads/sinhvien/20IT347.jpg" alt="">
+                                <span class="header__log-user-name">NGỌC THẮNG</span>
+                            </div>
+                            <ul class="header__center-log-user-list ">
+                                <li class="header__center-log-user-item">
+                                    <a class="header__center-log-user-link" href="">Tài Khoản Của Tôi</a>
+                                </li>
+                                <li class="header__center-log-user-item">
+                                    <a class="header__center-log-user-link" href="">Địa Chỉ Của Tôi</a>
+                                </li>
+                                <li class="header__center-log-user-item">
+                                    <a class="header__center-log-user-link" href="">Đơn Mua</a>
+                                </li>
+                                <li class="header__center-log-user-item header__center-log-user-item--separate">
+                                    <a class="header__center-log-user-link" href="">Đăng Xuất</a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+                        <li class="header__center-cart-item">
+                            <a href="" class="header__cart">
+                                <span class="header__cart-total">1</span>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                GIỎ HÀNG
+                            </a>
+                            <div class="header__cart-list-cart">
+                                <!-- no cart header__cart-img-no-cart -->
+                                <img class="header__cart-img-no-cart"
+                                    src="https://rtworkspace.com/wp-content/plugins/rtworkspace-ecommerce-wp-plugin/assets/img/empty-cart.png"
+                                    alt="">
+                                <div class="header__cart-with-cart">
+                                    <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                    <ul class="header__cart-list-with-cart">
+                                        <li class="header__cart-item-cart">
+                                            <img class="header__cart-item-img"
+                                                src="https://rtworkspace.com/wp-content/plugins/rtworkspace-ecommerce-wp-plugin/assets/img/empty-cart.png"
+                                                alt="">
+                                            <div class="header__cart-item-head">
+                                                <span class="header__cart-item-name"> Bộ kem đặc trị vùng mắt Bộ kem đặc
+                                                    trị vùng mắtBộ kem đặc trị vùng mắtBộ kem đặc trị vùng mắtBộ kem đặc
+                                                    trị vùng mắtBộ kem đặc trị vùng mắtBộ kem đặc trị vùng mắt</span>
+                                                <span class="header__cart-item-description">Phân Loại : Bạc</span>
+                                            </div>
+                                            <div class="header__cart-item-price-wap">
+                                                <span class="header__cart-item-price">2.545.400đ</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-quanticy">2</span>
+                                            </div>
+                                            <span class="header__cart-item-remove"><i
+                                                    class="fa-sharp fa-solid fa-trash"></i></span>
+                                        </li>
+                                        <li class="header__cart-item-cart">
+                                            <img class="header__cart-item-img"
+                                                src="https://rtworkspace.com/wp-content/plugins/rtworkspace-ecommerce-wp-plugin/assets/img/empty-cart.png"
+                                                alt="">
+                                            <div class="header__cart-item-head">
+                                                <span class="header__cart-item-name">Bộ băng cxhaan chất </span>
+                                                <span class="header__cart-item-description">Phân Loại : Bạc</span>
+                                            </div>
+                                            <div class="header__cart-item-price-wap">
+                                                <span class="header__cart-item-price">2.545.400đ</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-quanticy">2</span>
+                                            </div>
+
+                                            <span class="header__cart-item-remove"><i
+                                                    class="fa-sharp fa-solid fa-trash"></i></span>
+                                        </li>
+                                        <li class="header__cart-item-cart">
+                                            <img class="header__cart-item-img"
+                                                src="https://rtworkspace.com/wp-content/plugins/rtworkspace-ecommerce-wp-plugin/assets/img/empty-cart.png"
+                                                alt="">
+                                            <div class="header__cart-item-head">
+                                                <span class="header__cart-item-name">Bộ kem đặc trị vùng mắt đặc trị
+                                                    vùng mắt </span>
+                                                <span class="header__cart-item-description">Phân Loại : Bạc</span>
+                                            </div>
+                                            <div class="header__cart-item-price-wap">
+                                                <span class="header__cart-item-price">2.545.400đ</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-quanticy">2</span>
+                                            </div>
+
+                                            <span class="header__cart-item-remove"><i
+                                                    class="fa-sharp fa-solid fa-trash"></i></span>
+                                        </li>
+                                        <li class="header__cart-item-cart">
+                                            <img class="header__cart-item-img"
+                                                src="https://rtworkspace.com/wp-content/plugins/rtworkspace-ecommerce-wp-plugin/assets/img/empty-cart.png"
+                                                alt="">
+                                            <div class="header__cart-item-head">
+                                                <span class="header__cart-item-name">Bộ kem đặc trị vùng mắt đặc trị
+                                                    vùng mắt đặc trị vùng mắt</span>
+                                                <span class="header__cart-item-description">Phân Loại : Bạc</span>
+                                            </div>
+                                            <div class="header__cart-item-price-wap">
+                                                <span class="header__cart-item-price">2.545.400đ</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-quanticy">2</span>
+                                            </div>
+
+                                            <span class="header__cart-item-remove"><i
+                                                    class="fa-sharp fa-solid fa-trash"></i></span>
+                                        </li>
+                                        <li class="header__cart-item-cart">
+                                            <img class="header__cart-item-img"
+                                                src="https://rtworkspace.com/wp-content/plugins/rtworkspace-ecommerce-wp-plugin/assets/img/empty-cart.png"
+                                                alt="">
+                                            <div class="header__cart-item-head">
+                                                <span class="header__cart-item-name">Bộ kem đặc trị vùng mắt đặc trị
+                                                    vùng mắt đặc trị vùng mắt</span>
+                                                <span class="header__cart-item-description">Phân Loại : Bạc</span>
+                                            </div>
+                                            <div class="header__cart-item-price-wap">
+                                                <span class="header__cart-item-price">2.545.400đ</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-quanticy">2</span>
+                                            </div>
+
+                                            <span class="header__cart-item-remove"><i
+                                                    class="fa-sharp fa-solid fa-trash"></i></span>
+                                        </li>
+                                        <li class="header__cart-item-cart">
+                                            <img class="header__cart-item-img"
+                                                src="https://rtworkspace.com/wp-content/plugins/rtworkspace-ecommerce-wp-plugin/assets/img/empty-cart.png"
+                                                alt="">
+                                            <div class="header__cart-item-head">
+                                                <span class="header__cart-item-name">Bộ kem đặc trị vùng mắt đặc trị
+                                                    vùng mắt đặc trị vùng mắt</span>
+                                                <span class="header__cart-item-description">Phân Loại : Bạc</span>
+                                            </div>
+                                            <div class="header__cart-item-price-wap">
+                                                <span class="header__cart-item-price">2.545.400đ</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-quanticy">2</span>
+                                            </div>
+
+                                            <span class="header__cart-item-remove"><i
+                                                    class="fa-sharp fa-solid fa-trash"></i></span>
+                                        </li>
+
+                                        <li class="header__cart-item-cart">
+                                            <img class="header__cart-item-img"
+                                                src="https://rtworkspace.com/wp-content/plugins/rtworkspace-ecommerce-wp-plugin/assets/img/empty-cart.png"
+                                                alt="">
+                                            <div class="header__cart-item-head">
+                                                <span class="header__cart-item-name">Bộ kem đặc trị vùng mắt</span>
+                                                <span class="header__cart-item-description">Phân Loại : Bạc</span>
+                                            </div>
+                                            <div class="header__cart-item-price-wap">
+                                                <span class="header__cart-item-price">2.545.400đ</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-quanticy">2</span>
+                                            </div>
+                                            <span class="header__cart-item-remove"><i
+                                                    class="fa-sharp fa-solid fa-trash"></i></span>
+                                        </li>
+
+                                    </ul>
+                                    <a href="" class="header__cart-btn">Xem Giỏ Hàng</a>
+
+
+
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <ul class="header__bottom-list">
+                    <li class="header__bottom-item">
+                        <a class="header__bottom-link" href="">
+                            <i class="fa-solid fa-bars"> </i>
+                            DANH MỤC</a>
+                    </li>
+                    <li class="header__bottom-item">
+                        <a class="header__bottom-link" href="">THỜI TRANG CAO CẤP</a>
+                    </li>
+                    <li class="header__bottom-item">
+                        <a class="header__bottom-link" href="">BÁCH HOÁ MỸ </a>
+                    </li>
+                    <li class="header__bottom-item">
+                        <a class="header__bottom-link" href="">FADO MAIL</a>
+                    </li>
+                    <li class="header__bottom-item">
+                        <a class="header__bottom-link" href="#footer">MÃ GIẢM GIÁ</a>
+                    </li>
+                    <li class="header__bottom-item">
+                        <a class="header__bottom-link" href="">FAGES</a>
+                        <ul class="header__nav-list-menus">
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="./shoppingCart.html">SHOPPING CART</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="./productDetails.html">SHOPPING DETAILS</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="./checkout.html">SHOPPING DETAILS</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="./blogdetail.html">SHOPPING DETAILS</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </header>
+        <div class="container__app">
+            <div class="grid">
+                <div class="pages__product--breadcrumb">
+                    <ul class="pages__product-list">
+                        <li class="pages__product-item">
+                            <a class="pages__product-link" href="">Trang Chủ</a>
+                            <span class="pages__product-icon">/</span>
+                        </li>
+                        <li class="pages__product-item">
+                            <a class="pages__product-link" href="">Sản Phẩm</a>
+                            <span class="pages__product-icon">/</span>
+                        </li>
+                        <li class="pages__product-item breadcrumb--active">
+                            <a class="pages__product-link" href="">Chi Tiết Sản Phẩm </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="grid__column-12">
+                    <h3 class="billing__title">BILLING DETAIL</h3>
+                    <hr>
+                    <div class="grid__row">
+
+                        <div class="grid__column-7">
+                            <div class="container__billing-details">
+                                <div class="detail__item">
+                                    <div class="detail__item-name">
+                                        <label for="">Firt Name</label>
+                                        <input type="text" placeholder="Enter FirtName" name="" id="">
+                                    </div>
+                                    <div class="detail__item-name">
+                                        <label for="">Full Name</label>
+                                        <input type="text" placeholder="Enter FullName" name="" id="">
+                                    </div>
+
+
+                                </div>
+                                <div class="detail__item">
+                                    <div class="detail__item-name">
+                                        <label for="">Country</label>
+                                        <input type="text" placeholder="Enter Country" name="" id="">
+                                    </div>
+
+                                </div>
+                                <div class="detail__item">
+                                    <div class="detail__item-name">
+                                        <label for="">Province</label>
+                                        <input type="text" placeholder="Enter Province" name="" id="">
+                                    </div>
+                                    <div class="detail__item-name">
+                                        <label for="">Distrist</label>
+                                        <input type="text" placeholder="Enter Distrist" name="" id="">
+                                    </div>
+                                </div>
+                                <div class="detail__item">
+                                    <div class="detail__item-name">
+                                        <label for="">Street Address</label>
+                                        <input type="text" placeholder="Enter Street Address" name="" id="">
+                                    </div>
+                                </div>
+                                <div class="detail__item">
+                                    <div class="detail__item-name">
+                                        <label for="">Phone</label>
+                                        <input type="text" placeholder="Enter Phone" name="" id="">
+                                    </div>
+                                    <div class="detail__item-name">
+                                        <label for="">Email</label>
+                                        <input type="text" placeholder="Enter Email" name="" id="">
+                                    </div>
+
+                                </div>
+                                <div class="detail__item-confirm">
+                                    <p>Những thông tin bạn cung cấp trên là đúng với sự thật , điều này giúp chúng tôi
+                                        tránh sự nhầm lẫn địa chỉ ,
+                                        gian lận và những thông tin này giúp chúng xác nhận tìm đc địa điểm của bạn dễ
+                                        dàng hơn</p>
+                                    <input type="checkbox" name="" id="" checked="checked">
+                                    <label for="">I certify that the above information is correct</label>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid__column-5">
+                            <div class="container__your-order">
+                                <h4>YOUR ORDER</h4>
+                                <hr>
+                                <div class="container__bill-order">
+
+                                    <table class="bill__order-cart">
+                                        <tr class="table-th__list-oder">
+                                            <th>img</th>
+                                            <th>Product</th>
+                                            <th class="table__th-total">Total</th>
+                                        </tr>
+                                        <tr class="table-td__list-oder">
+                                            <td class="table__td-img"><img class="img__oder" src="" alt="">
+                                            </td>
+                                            <td class="table__td-name">sản phẩm của quân ngoạn ăn chống chuột rút và tăng sức lực chạy 1 tiếng rưỡi</td>
+                                            <td class="table__td-total">
+                                                90.000.000 đ
+                                            </td>
+                                        </tr>
+                                        <tr class="table-td__list-oder">
+                                            <td class="table__td-img"><img class="img__oder" src="" alt="">
+                                            </td>
+                                            <td class="table__td-name">sản phẩm của quân ngoạn ăn chống chuột rút và tăng sức lực chạy 1 tiếng rưỡi</td>
+                                            <td class="table__td-total">
+                                                90.000.000 đ
+                                            </td>
+                                        </tr>
+                                        <tr class="table-td__list-oder">
+                                            <td class="table__td-img"><img class="img__oder" src="" alt="">
+                                            </td>
+                                            <td class="table__td-name">sản phẩm của quân ngoạn ăn chống chuột rút và tăng sức lực chạy 1 tiếng rưỡi</td>
+                                            <td class="table__td-total">
+                                                90.000.000 đ
+                                            </td>
+                                        </tr>
+
+                                        
+                                    </table>
+                                    <div class="bill__order-subtotal">
+                                        <h4>SubTotal</h4>
+                                        <span>180.000.000 đ</span>
+                                    </div>
+                                    <div class="bill__order-total">
+                                        <h4>Total</h4>
+                                        <span>180.000.000 dd</span>
+                                    </div>
+                                    
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer" class="footer">
+        <div class="grid ">
+            <div class="grid__row footer__top">
+                <div class="grid__column-12_4">
+                    <div class="footer__top-list">
+                        <img class="footer__top-list-img"
+                            src="data:image/png;base64,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"
+                            alt="">
+                        <div class="footer__top-list-title">
+                            <h4 class="footer__top-list-heading">Chất Lượng Hàng Đầu</h4>
+                            <span class="footer__top-list-text">Cam Kết Sản Phẩm Chính Hãng 100%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__column-12_4">
+                    <div class="footer__top-list">
+                        <img class="footer__top-list-img"
+                            src="data:image/jpeg;base64,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"
+                            alt="">
+                        <div class="footer__top-list-title">
+                            <h4 class="footer__top-list-heading">Giao Hàng Nhanh Chóng</h4>
+                            <span class="footer__top-list-text">Chúng Tôi Cam Kết Giao Hàng Nhanh nhất có thể</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__column-12_4">
+                    <div class="footer__top-list">
+                        <img class="footer__top-list-img"
+                            src="https://lh3.googleusercontent.com/JGqTatU6O3dB8pqI56rO4xHOXzwm4iFH8rQFwy1wPpvC4xrSoDxEyzuAul5UCUoOGBfJmJIYyXHlfBiU3ZTvbQ3UFuO24ojVODfQahNwJaZfYDZR6ghSAHaYyQQrVbBhcFiFpmwHPOdZXJuNGuT3KkIhDQSI1JBZJXlDxHHHA61FDh3ICuk_bN9SVM4q"
+                            alt="">
+                        <div class="footer__top-list-title">
+                            <h4 class="footer__top-list-heading">Mua Hàng Siêu Tiếp Kiệm</h4>
+                            <span class="footer__top-list-text">Giảm Giá & Khuyến Mãi Với Ưu Đãi Cực Lớn</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__column-12_4">
+                    <div class="footer__top-list">
+                        <img class="footer__top-list-img"
+                            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBISEREREBIREhEPDxEREQ8QEREREREPGBQZGRgUGBgcIS4lHB4rHxgWNDsmLC8/NTU1GiQ7QD00Py40NTEBDAwMEA8QHxISHzQoJSw0NjQ9NDQxMTYxNDQ0NzQ0NDE0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ2MTQ0NDQ0NjQxNP/AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEAAQUBAAAAAAAAAAAAAAAAAwIEBQYHAf/EAEEQAAICAAMDBwkGBAUFAAAAAAABAgMEERIFBiETMUFRcZGxFCIyU2FygaHRFiMzQlKTBxWSwUNzgqKyFyRidPH/xAAZAQEAAwEBAAAAAAAAAAAAAAAAAgMEAQX/xAAsEQEAAgECAwYHAQEBAAAAAAAAAQIDETEEFCESE1FhobEiMkGBkdHhUvAj/9oADAMBAAIRAxEAPwDswAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUWTUVmz2ckk2+ZIxtlrk838F1ICeWJb5uC+ZHqfS33siTPdQEmftGojzGoCTV7Rq9pHqGoCTV7RqI9Q1ASahqI8xqAk1DUR6hmBJqGr2keoZgS6n1vvPY4iS6c+0h1BsDIVWqXNz9KJTExm081zoyNNmqKff7GBKAAAAAAAAAAAAAstoWZKMf1Nv4L/wCos0yTa786HuvxRBWwJQAAAAAAAAAAAAAAAAAAAAFLZcYCzznHrWfxRa2DZ8vvY9kvADNgAAAAAAAAAAAAMRtn04e6/EioRNtf0o+6/EjoQEuQyKsgBTkY/aG2sLh/x7q63+lyWru5zQN4dsX4vFXV1XTrwtMuTXJvS7Jr025c+Wea+Bi8PsqqHFRTk+LlLi2+s04+FteNdoZcvFVpOkRrLcsT/ELCp5U14i99cK1GHfNr5IsLd+cVL8LBwiuuyxt9yRiYwS5kkDTXg6fVltxt520hez3p2nL0VhYf6ZzfiiF7f2m/8epdlMf7nkMPZL0YSfZFsnjsy981Vn9LJdxhjf3/AKj3+edtfx/ES2/tP19T7aYksN59px55Yaa/y5xfykHszEeps7mRTwdsfSrmu2Mh3OCdtPz/AE7/AIiPH8fxf1b54yPp4aqa/wDCyUX80X2H38r5rsPiK+uUYxnD5PP5Gts8OW4PH5w7XjMnlLoGB3jwl7yruhqf5JvRPulxMqvYcltwtc1lKMX2outl4m3Czg6rbOTjJaqZS1VuHSknzcOoovwdo+WdWinG1n5o0dRyGR5h7VOEZxecZxUk/YyvIxtqC1FOzvxo9kvAktXAo2f+NHsl4AZsAAAAAAAAAAAABitrenD3X4kdCJdq+nD3X4lFAE+RiN6doPDYPEWr041yVftnLzY/Noy+Rru/MKJYWMMTbKmEroZTUdS1p5pS9nA7G7k7Od7Oq5OuK521nJvncnxbZd6i/r2VXNZ1YzCzj0Zz0PuPZ7Pw9fG/HYeEVzqE1NnqxxGKI393k8tmmdez7MfHi0l0tL4s3WGGwOBrhLFTqhOfBTucVqllm1HM1Svb+DrnCGConibHOMeXuTjXHjlnFc77jK/xJipeQ6knnOzh/pRny5Jy2rWNYifVow4oxRa86TMejOx3r2aubF4df64mcqnGcYzg1KM4qUZLinFrNNHG3h6/0R7jfMHvjgKq6652uM4VwjKPJzeTUUsuCKc3D93ETHX7L8PEd5MxPT7tqMLdvRs+MpQniqFKEnGUXOOcZJ5NP25lo9/Nneuf7dn0OdQVdk77FFSjPEWzjJrnjKTafcyOHD3k6T0SzZu7rrHV0qN+zsdJ112U2WaXL7qUeUS6+BpOLhyd1tLebpnpb600mn3NGT3HqgsVnGKT5OXMvahtrb8FjMVTicIrK6ZwjGyp6blF1wlxzaz9J9PUaMc2w5OxvGjPkiubHF+kTqw+Y1F8p7Ms4wxUqX+i+DWXxYlh8EuL2jh8vYuPiaOZx+f4lm5XJ9NJ+8Ns3MxWvDuDebqm4r3XxXibFkaluXdhHZdDC3SulGMHN6HGCWby0vp6TbsjzcsxN5muz08MTGOItugtRHs/8WPZLwJrURYD8WPZLwK1jMgAAAAAAAAAAAAMXtT04e6/EpoKtqenD3X4lNAE5rO/+Clbg24RcnTZCxpcXoi/O4dmZsx61nwfN1HazpMS5aNY0cOnhq5cXCL+CPIYStc0I9yOu37vYSbcpUQzfFuK05v4Crd7CQeaog2v1LV4m/nKb9n2YeUv/r3aLuvsiV1sJ6XGmuUZynlknpeaiuvmLLejbLxmMca3/wBvhHKEJL/Es4Kcuzhl8Daf4g7cWFw8cLh8o34pShHRwddXNKfDm58l7ew57ha1XBRXQvmMWua/bnaNnMkRhp2InrO7KQwlsoqUa7JRfFSUJNNdpDXRKyWUIOculRjmzNYPeXHVUwqpwStrjDJWN2cV18ItGJ3d2jfh5ynXTy1rjLOvz3lm83zJsujLee10281c4qR2eu/kjvwsq8lOtxb5lOOnPvJlgbVHVyU1HLPVoeWXXmebe2risVZXPE4fybk4yjGOc/Pza4+clzZGVxG82P5B0xwK5N1cnyrdq83Tlq9HL5kZzZIrE9nq7GGk2mNejHbK2lLD2wtjxUWlOP6oP0l2mwbz7HlbNY7CrlIXQjykYcXwXCSXTwyT7EaTQ2oRTebUUmzddxNs6ZPCWPzZ5yqbfBSzzlDxfeczxNZjLXePYwTFonFbafdqc4rmlHj0priR8jX+ldyOzX7Ops9OqufvQjLxRFXsfDRecaKU+tVxX9ivnY+tVnJz/prW4GAlCNlrjpjPTGHDLUlnm/mbkFFJZJJLqR6Y8l5vabS2Y6RSsVhFaQ4H8WPZLwZNaQ4H8WPZLwZBNmQAAAAAAAAAAAAGL2q/Ph7r8SOhlW1350PdfiR0SAusxmUahqArzLfaGOroqndZLTCqDnJvqRLqOZ/xQ2u52V4CD8xKN1/t4vRHvWfcSpWbWiIRtaKxrLWMTj7MXiLMXbnnZLKuL/JUn5se7n9uZ7qLeMslkug91nsUrFI7MPLtM2nWW34DevF00QqrwfKQjDJWZzWft4RMNu5tS7DTlZCp3WOMk6/O4Zyz6EX2B35tw9MKIYWFkYQ08o7HFv4aWYnd/bVmEnK7k1ZOUZLQ56V5zz58jLFJ1v8AD/erTNo+D4vTboud4ds4jF2VTvo8nVcZRSzl5+bXHil1GXxG9mM8ndEcFnB06OVzmvN05avRMBt/eGzHWVznSqVXGUcoz16s2uPMuoyt+/dvIPDxwsHF1cnynKtP0ctWWkjbHM46x2PWXYv/AOkz2mv0NqMU+dJZksbZRalFuMotSjJc8ZLmZZ0tqMU+dJZles3fRj0dm3a2xHF4eM+ayPmWR/TNLj8GZfM4/uhth4bFQzf3dzVdi6s/Rl8H4nXFI8nPj7u+n0enhyduuqvMZlGoailaptZFgX97Hsl4HtsijZ7++j2S8AM4AAAAAAAAAAAAAw+2n50PdfiiCmRJt1+dX7svFFvTIC71DURahqAm1HDNr4p243F2t553zgvZGHmpfI7bqODXy+9v/wDZu/5yNXCR8f2UcR8ivWNZFmMz02HRLqGsizGZw0S6xrIsxmdNEusayLMZg0S6+rnXFdp3LZd+uimb/PVCXfFM4Q5HbNgy/wC1w3+RV/wRh43av/eDVwu8/ZlNQ1EWoajA1lsjzZr++j2S8CO2Q2U/v49kvADYgAAAAAAAAAAAAGC3geU6/dl4osqZE+9E8pVe1T+Tj9Sww9gGQ1DUQqQ1ATORya7dHHOy2SpTU7rZxfKV8Yyk2nz9TOp6hqLMeScc6whekXjSXKfsjjvUr92r6j7I471K/dq+p1bUe6i7m7+Eev7V8vTzco+yOO9Sv3avqPsjjvUr92r6nV9Q1Dm8nhHr+zl6eblH2Rx3qV+7V9R9kcd6lfu1fU6vqGoc3k8I9f2cvTzco+yOO9Sv3avqPsjjvUr92r6nV9Q1Dm8nhHr+zl6eblH2Qx3qV+7V9TqOya5V4eiE1lOFMISWaeUlFJrMm1Hmoqy5rZNNU6Y4psm1DUQ6hqKlj22RVseX38fdl4FrfYVbBszxK92b+QG2gAAAAAAAAAAAAMDvZh3KlWLnqlm/dfB/2NYwmJOg2wjKMoyycZJxkn0prJnOtr4CeFtceLrk84T611P2oDMV25kmowWHxhewxaAyOYzLDypDypAX+YzLDypDypAX+YzLDypDypAX+YzLDypDypAX+YzLDypDypAX+YzLDypDypAX+ZROzIsZYpdZa34wCfF4kyu59LlKy18yWiPa2m/BGtYaqeIsjCtZuT4vojHpk/YdF2fhY01xrjzRXP0tvi2/iBdgAAAAAAAAAAUSZWeAWOInLoMDtWMrIuE46ovofQ+tdTNqlBMinhYvoA5XiMNZW+EXKPs4SX1IHjtPpKyPbCf9kdTs2XXLnSLWzd+qX5UBzR7Wgueb/on9Ch7ar/X/ALZ/Q6JPdSl/lRbz3Kof5UBoL27V6z/bP6D+fU+sXdP6G7z3FofR4kctwaOrxA0v7QUetXdP6Hn8/o9au6f0Nyf8P6erxPP+n1PV4gad/P6PWrun9D37QUetXdP6G4f9P6erxKl/D+nq8QNO/n1PrF3T+g/n1PrF/TP6G5x3Bo6vEkhuJQugDSVtur1n+2f0K1tet803/RP6G9Q3KoX5UXFe6VC/KgNAWPT5tb7IT+hLVVbY+EJRX6pc/cdDq3eqj+VF3XsquPMkBrexsPKtZRWTfpS6ZdrNjw0pdJcxwsVzIlUEgPI5kh5kegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH/9k="
+                            alt="">
+                        <div class="footer__top-list-title">
+                            <h4 class="footer__top-list-heading">Hỗ Trợ Online 24/7</h4>
+                            <span class="footer__top-list-text">Gọi Ngay
+                                <a class="footer__top-list-item-link" href="tel:08788854">085 8788 854</a>
+                                để được tư vấn</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="grid__row footer__center">
+                <div class="grid__column-12_3 ">
+                    <div class="footer__center-list">
+                        <h2>CÔNG TY TNHH BAN HANG FADO LU HANH</h2>
+                        <div class="footer__center-item">
+                            <i class="footer__center-icon fa-sharp fa-solid fa-map-location-dot"></i>
+                            <span class="footer__center-text">15 Phan Bôi , Phường An Hải Bắc , Quận Sơn Trà , Tp Đà
+                                Nẵng</span>
+                        </div>
+                        <div class="footer__center-item">
+                            <i class="footer__center-icon fa-solid fa-phone"></i>
+                            <span class="footer__center-text">Hotline : 0858.788.854</span>
+                        </div>
+                        <div class="footer__center-item">
+                            <i class="footer__center-icon fa-solid fa-envelope"></i>
+                            <span class="footer__center-text">Email : Luhanh08082002th@gmail.com</span>
+                        </div>
+                        <div class="footer__center-item">
+                            <i class="footer__center-icon fa-solid fa-globe"></i>
+                            <span class="footer__center-text"> Website : wwww.thucphamnongnghiep.vn.v</span>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="grid__column-12_5">
+                    <div class="footer__center-list">
+                        <h2>ĐIÈU HƯỚNG NHANH</h2>
+                        <ul class="footer__center-nav-list">
+                            <li class="footer__center-nav-item">
+                                <a class="footer__center-nav-link" href="">TRANG CHỦ</a>
+                            </li>
+                            <li class="footer__center-nav-item">
+                                <a class="js__modal-contact footer__center-nav-link">LIÊN HỆ</a>
+
+                            </li>
+                            <li class="footer__center-nav-item">
+                                <a class="footer__center-nav-link" href="">TIN TỨC & SỰ KIỆN</a>
+                            </li>
+                            <li class="footer__center-nav-item">
+                                <a class="footer__center-nav-link" href="">GIỚI THIỆU</a>
+                            </li>
+                            <li class="footer__center-nav-item">
+                                <a class="footer__center-nav-link" href="">DANH MỤC</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="grid__column-12_5">
+                    <div class="footer__center-list ">
+                        <h2>MẠNG XÃ HỘI</h2>
+                        <a href="#" class="footer__center-item-intetnet footer__center-item--facebook">
+                            <i class="footer__center-icon fa-brands fa-facebook"></i>
+                            <span class="footer__center-text">Facebook</span>
+                        </a>
+                        <a href="#" class="footer__center-item-intetnet footer__center-item--youtobe">
+                            <i class="footer__center-icon fa-brands fa-youtube"></i>
+                            <span class="footer__center-text">YouTobe</span>
+                        </a>
+                        <a href="#" class="footer__center-item-intetnet footer__center-item--instagram">
+                            <i class="footer__center-icon icon--instagram fa-brands fa-square-instagram"></i>
+                            <span class="footer__center-text">instargram</span>
+                        </a>
+
+
+                    </div>
+
+                </div>
+                <div class="grid__column-12_4">
+                    <div class="footer__center-list">
+                        <h2>GOOGLE MAP</h2>
+                        <div id="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.9453130790766!2d108.23279631465145!3d16.068327388881436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142182a2a5bd225%3A0xb758e2437eb5ea5c!2zMTUgUGhhbiBCw7RpLCBBbiBI4bqjaSBC4bqvYywgU8ahbiBUcsOgLCDEkMOgIE7hurVuZyA1NTAwMDAsIFZp4buHdCBOYW0!5e0!3m2!1svi!2sus!4v1680916428315!5m2!1svi!2sus"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom-title">
+            <p> @-2023 Bản Quyền Thuộc Về CYTNHH LỮ HÀNH</p>
+        </div>
+
+    </footer>
+    </div>
+    <div class="modal">
+        <div class="modal__container js__modal-container">
+            <i class="modal-icon-close fa-solid fa-xmark"></i>
+            <div class="modal__container-form">
+                <img class="modal-img"
+                    src="https://png.pngtree.com/png-vector/20220812/ourmid/pngtree-gradient-contact-phone-icon-design-png-image_6105711.png"
+                    alt="">
+                <div class="modal__container-table">
+                    <h4 class="modal-heading">GET IN TOUCH</h4>
+                    <input type="text " class="modal-input-name" placeholder="Name">
+                    <input type="text " class="modal-input-email" placeholder="Email">
+                    <textarea class="madal-textarea-msg" name="" id="" cols="30" rows="5"
+                        placeholder="Messages"></textarea>
+
+                    <button class="btn btn--modal">SEND</button>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+<script src="../../../assets/js/code.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="	sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</html>

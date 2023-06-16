@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xây dựng Website bán hàng đồ gia dụng</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <script src="../js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    
+    </style>
+  </head>
+<body>
+  
+
+
+  <div class="container-fluid">
+    <div class="row logo ">
+     
+      <div class="col-lg-6 col-md-6 col-sm-6 ">
+       <a class="navbar-brand" href="#">
+         <img src="../images/LOGO/logoo.png" alt="" width="70" height="47">
+       </a>
+       <a class="tenlogo">THẾ GIỚI GIA DỤNG </a>
+     </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 ">
+       <form class="d-flex">
+         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+         <button class="btn btn-outline-success" type="submit">Search</button>
+       </form>
+    
+ 
+      </div>
+    </div>
+  </div>
+  
+ 
+  <nav class="row"> 
+    <nav class="navbar navbar-expand-lg  col">
+
+     
+    
+
+          <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-info"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto fs-5 ">
+              <li class="nav-item active ">
+                <a class="nav-link" href="indexh.html"><i class="fa fa-home"></i> Trang Chủ <span class="sr-only"></span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="giới thiệu.html"><i class="fa fa-list-alt"></i> Giới Thiệu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#"><i class="fa fa-envelope"></i> Liên Hệ</a>
+                
+                <!-- Modal -->
+                 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-titlem text-info fs-3 fw-bold" id="staticBackdropLabel" > liên hệ</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      
+                       
+                        <form class="text-danger">
+                          <div class="frorm-group">
+                            <h6>Họ Và Tên Của Bạn</h6>
+                            <input type="text" class="form-control " placeholder="Nhập Họ và tên">
+                          </div>
+                          <div class="frorm-group">
+                            <h6>Số Điện Thoại Liên Hệ</h6>
+                            <input type="email" class="form-control " placeholder="Nhập Số Điện Thoại">
+                          </div>
+                          <div class="frorm-group">
+                            <h6>Địa Chỉ Email</h6>
+                            <input type="text" class="form-control" placeholder="Nhập Email">
+                          </div>
+                          <div class="frorm-group">
+                            <h6>Nội Dung Yêu Cầu Của Bạn Đối Với Chúng Tôi</h6>
+                            <textarea type="text" cols="20" rows="2" class="form-control" onblur="if (this.value == ''){this.value='Enter your massager' ;}"></textarea>
+                          </div>
+                         
+                        </form>
+                        <div class="modal-footer">
+                          <div class="pull-left">
+                            <span>Enter Call: 083224124</span>
+                          </div>
+                          <div class="pull-left">
+                            <span>Enter Email : luhanh08082002@gmail.com</span>
+                          </div>
+                
+                        </div>
+                  
+                      
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                        <button type="button" class="btn btn-primary gui">Gửi Đi</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown" href="#"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-wrench"></i> Sửa Chửa - Lắp Đặt</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Thiết Bị Link Kiện</a>
+                  <a class="dropdown-item" href="">Nhân Viên Sửa Chửa</a>
+                </div>  
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-bars"></i> Danh Mục Sản Phẩm</a>
+
+             <div class="dropdown-menu fs-5" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="thietbigiatui.html">Thiết Bị Giặt Ủi</a>
+                  <a class="dropdown-item" href="thiết bị nhà bếp.html">Thiết bị nhà bếp</a>
+                  <a class="dropdown-item" href="thiết bị điều hòa phòng.html">Thiết bị Điều Hòa phòng </a>
+                
+                  <a class="dropdown-item" href="thiết bị chiếu sáng.html">Thiết bị chiếu sáng </a>
+                 
+                  
+            </div>
+              </li>
+           </ul>
+        <ul class="navbar-nav thenao col-lg-3 ms-lg-auto fs-5 ">
+   
+           <li class="nav-item">
+            <a id="cart"class="nav-link" href="#">
+              <i class="fa fa-shopping-cart"></i>
+             <i id="count-item" data-count="0">0 item</i>
+           </a>
+               <div id="myModal" class="modall">
+                <div class="modal-contentt">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    
+                      <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                            <span class="cart-price cart-header cart-column">Giá</span>
+                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                        </div>
+                        <div class="cart-items">
+                         
+                        </div>
+                  
+                        
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                            <span class="cart-total-price">0VNĐ</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div>
+              </div>
+           </li>
+        <li class="nav-item dropdown  ">
+           <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"  aria-expanded="false">
+                         Tài Khoản
+           </a>
+    
+           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="dangnhap.html">Đăng Nhập </a>
+              <a class="dropdown-item" href="Đăng ký.html">Đăng Ký</a>
+           </div>
+        </li>
+       </ul>
+     </div>
+   </nav>  
+
+
+   <div class="main-content">
+    <div class="section category">
+      <div class="h2-title">
+        <h2>THIẾT BỊ ĐIỀU HÒA PHÒNG<i class="fa fa-bolt"></i></h2>
+      </div>
+    </div>
+  </div>
+
+      
+
+</div>
+
+ <div class="wrapper_tabcontent">
+         <div id="allproducts" class="tabcontent active">
+           <div  class="container"> 
+             
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-6 ">
+                  <form >
+                  <input id="myInput" class="form-control me-5"  type="search"  placeholder="Tìm kiếm sản phẩm" >
+                </form>
+          </div>
+          </div>
+
+  <div  class="row  ">
+     
+    <div class="col-lg-3 col-md-4 col-sm-4">
+
+      <!--Card-->
+       <div class="card ">
+    
+        <!--Card image-->
+        <div class="view overlay">
+          <img src="../images/điều hòa phòng/9d68d26609145ae16431a63af2021.jpg" class="card-img-top" alt="">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--Card image-->
+    
+        <!--Card content-->
+        <div class="card-body text-center">
+          <!--Category & Title-->
+         <a href="" class="grey-text">
+            <h5 class="title">2410_panasonic_nr_f603gt_x2_300x300</h5>
+          </a>
+          
+    
+          <h4 class="font-weight-bold blue-text ">
+            <strong class="price">139$</strong>
+          </h4>
+          <h5 class="buy-now">
+            <strong>
+              <a href="" class="dark-grey-text">Mua Ngay</a>
+            </strong>
+          </h5>
+    
+        </div>
+        <!--Card content-->
+    
+      </div>
+      <!--Card-->
+    
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-4">
+    
+      <!--Card-->
+       <div class="card ">
+    
+        <!--Card image-->
+        <div class="view overlay ">
+          <img src="../images/điều hòa phòng/c71e1346dc8e871c4f6fb09bbf2021.jpg" class="card-img-top" alt="">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--Card image-->
+    
+        <!--Card content-->
+        <div class="card-body text-center">
+          <!--Category & Title-->
+         <a href="" class="grey-text">
+            <h5 class="title">Máy hụt khói nhà bếp hghbjhbj </h5>
+          </a>
+          
+    
+          <h4 class="font-weight-bold blue-text ">
+            <strong>139$</strong>
+          </h4>
+          <h5>
+            <strong>
+              <a href="" class="dark-grey-text">Mua Ngay</a>
+            </strong>
+          </h5>
+    
+        </div>
+        <!--Card content-->
+    
+      </div>
+      <!--Card-->
+    
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-4">
+    
+      <!--Card-->
+       <div class="card ">
+    
+        <!--Card image-->
+        <div class="view overlay ">
+          <img src="../images/điều hòa phòng/goi-y-5-mau-quat-dieu-hoa-lam-mat-bang-hoi-nuoc-trong-mua-nong .gif" class="card-img-top" alt="">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--Card image-->
+    
+        <!--Card content-->
+        <div class="card-body text-center">
+          <!--Category & Title-->
+         <a href="" class="grey-text">
+            <h5 class="title">Tủ lạnh Aqua 143L AQR-T150FA(BS) </h5>
+          </a>
+          
+    
+          <h4 class="font-weight-bold blue-text ">
+            <strong>139$</strong>
+          </h4>
+          <h5>
+            <strong>
+              <a href="" class="dark-grey-text">Mua Ngay</a>
+            </strong>
+          </h5>
+    
+        </div>
+        <!--Card content-->
+    
+      </div>
+      <!--Card-->
+    
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-4">
+    
+      <!--Card-->
+       <div class="card ">
+    
+        <!--Card image-->
+        <div class="view overlay ">
+          <img src="../images/điều hòa phòng/images (3).jpg" class="card-img-top" alt="">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--Card image-->
+    
+        <!--Card content-->
+        <div class="card-body text-center">
+          <!--Category & Title-->
+         <a href="" class="grey-text">
+            <h5 class="title">am-dun-nuoc-thuy-tinh-T-602C-535-43-732 </h5>
+          </a>
+          
+    
+          <h4 class="font-weight-bold blue-text">
+            <strong>139$</strong>
+          </h4>
+          <h5>
+            <strong>
+              <a href="" class="dark-grey-text">Mua Ngay</a>
+            </strong>
+          </h5>
+    
+        </div>
+        <!--Card content-->
+    
+      </div>
+      <!--Card-->
+    
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-4">
+    
+      <!--Card-->
+       <div class="card ">
+    
+        <!--Card image-->
+        <div class="view overlay ">
+          <img src="../images/điều hòa phòng/may-lanh-panasonic-cu-cs-u12vkh-8-1-chieu-1-5hp-inverter-model-2020.jpg" class="card-img-top" alt="">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--Card image-->
+    
+        <!--Card content-->
+        <div class="card-body text-center">
+          <!--Category & Title-->
+         <a href="" class="grey-text">
+            <h5 class="title">Máy hụt khói nhà bếp hghbjhbj </h5>
+          </a>
+          
+    
+          <h4 class="font-weight-bold blue-text ">
+            <strong>139$</strong>
+          </h4>
+          <h5>
+            <strong>
+              <a href="" class="dark-grey-text">Mua Ngay</a>
+            </strong>
+          </h5>
+    
+        </div>
+        <!--Card content-->
+    
+      </div>
+      <!--Card-->
+    
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-4">
+    
+      <!--Card-->
+       <div class="card ">
+    
+        <!--Card image-->
+        <div class="view overlay ">
+          <img src="../images/điều hòa phòng/may.jpg" class="card-img-top" alt="">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--Card image-->
+    
+        <!--Card content-->
+        <div class="card-body text-center">
+          <!--Category & Title-->
+         <a href="" class="grey-text">
+            <h5 class="title">Tủ lạnh Aqua 143L AQR-T150FA(BS) </h5>
+          </a>
+          
+    
+          <h4 class="font-weight-bold blue-text ">
+            <strong>139$</strong>
+          </h4>
+          <h5>
+            <strong>
+              <a href="" class="dark-grey-text">Mua Ngay</a>
+            </strong>
+          </h5>
+    
+        </div>
+        <!--Card content-->
+    
+      </div>
+      <!--Card-->
+    
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-4">
+    
+      <!--Card-->
+       <div class="card ">
+    
+        <!--Card image-->
+        <div class="view overlay ">
+          <img src="../images/điều hòa phòng/máy sưởi mini 2020.jpg" class="card-img-top" alt="">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--Card image-->
+    
+        <!--Card content-->
+        <div class="card-body text-center">
+          <!--Category & Title-->
+         <a href="" class="grey-text">
+            <h5 class="title">am-dun-nuoc-thuy-tinh-T-602C-535-43-732 </h5>
+          </a>
+          
+    
+          <h4 class="font-weight-bold blue-text">
+            <strong>139$</strong>
+          </h4>
+          <h5>
+            <strong>
+              <a href="" class="dark-grey-text">Mua Ngay</a>
+            </strong>
+          </h5>
+    
+        </div>
+        <!--Card content-->
+    
+      </div>
+      <!--Card-->
+    
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-4">
+    
+      <!--Card-->
+       <div class="card ">
+    
+        <!--Card image-->
+        <div class="view overlay ">
+          <img src="../images/điều hòa phòng/quat hơi nước.jpg" class="card-img-top" alt="">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--Card image-->
+    
+        <!--Card content-->
+        <div class="card-body text-center">
+          <!--Category & Title-->
+         <a href="" class="grey-text">
+            <h5 class="title">am-dun-nuoc-thuy-tinh-T-602C-535-43-732 </h5>
+          </a>
+          
+    
+          <h4 class="font-weight-bold blue-text">
+            <strong>139$</strong>
+          </h4>
+          <h5>
+            <strong>
+              <a href="" class="dark-grey-text">Mua Ngay</a>
+            </strong>
+          </h5>
+    
+        </div>
+        <!--Card content-->
+    
+      </div>
+      <!--Card-->
+    
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-4">
+    
+      <!--Card-->
+       <div class="card ">
+    
+        <!--Card image-->
+        <div class="view overlay ">
+          <img src="../images/điều hòa phòng/quat-hoi-nuoc-seeden-1s2021.jpg" class="card-img-top" alt="">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--Card image-->
+    
+        <!--Card content-->
+        <div class="card-body text-center">
+          <!--Category & Title-->
+         <a href="" class="grey-text">
+            <h5 class="title">am-dun-nuoc-thuy-tinh-T-602C-535-43-732 </h5>
+          </a>
+          
+    
+          <h4 class="font-weight-bold blue-text">
+            <strong>139$</strong>
+          </h4>
+          <h5>
+            <strong>
+              <a href="" class="dark-grey-text">Mua Ngay</a>
+            </strong>
+          </h5>
+    
+        </div>
+        <!--Card content-->
+    
+      </div>
+      <!--Card-->
+    
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-4">
+    
+      <!--Card-->
+       <div class="card ">
+    
+        <!--Card image-->
+        <div class="view overlay ">
+          <img src="../images/điều hòa phòng/quat-hoi-nuoc-sunhouse.2021jpg.jpg" class="card-img-top" alt="">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--Card image-->
+    
+        <!--Card content-->
+        <div class="card-body text-center">
+          <!--Category & Title-->
+         <a href="" class="grey-text">
+            <h5 class="title">am-dun-nuoc-thuy-tinh-T-602C-535-43-732 </h5>
+          </a>
+          
+    
+          <h4 class="font-weight-bold blue-text">
+            <strong>139$</strong>
+          </h4>
+          <h5>
+            <strong>
+              <a href="" class="dark-grey-text">Mua Ngay</a>
+            </strong>
+          </h5>
+    
+        </div>
+        <!--Card content-->
+    
+      </div>
+      <!--Card-->
+    
+    </div>
+    
+    <div class="col-lg-3 col-md-4 col-sm-4">
+    
+      <!--Card-->
+       <div class="card ">
+    
+        <!--Card image-->
+        <div class="view overlay ">
+          <img src="../images/điều hòa phòng/quat-hoi-nuoc2021.png" class="card-img-top" alt="">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--Card image-->
+    
+        <!--Card content-->
+        <div class="card-body text-center">
+          <!--Category & Title-->
+         <a href="" class="grey-text">
+            <h5 class="title">am-dun-nuoc-thuy-tinh-T-602C-535-43-732 </h5>
+          </a>
+          
+    
+          <h4 class="font-weight-bold blue-text">
+            <strong>139$</strong>
+          </h4>
+          <h5>
+            <strong>
+              <a href="" class="dark-grey-text">Mua Ngay</a>
+            </strong>
+          </h5>
+    
+        </div>
+        <!--Card content-->
+    
+      </div>
+      <!--Card-->
+    
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-4">
+    
+      <!--Card-->
+       <div class="card ">
+    
+        <!--Card image-->
+        <div class="view overlay ">
+          <img src="../images/điều hòa phòng/quat-hut-kin-500.jpg" class="card-img-top" alt="">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--Card image-->
+    
+        <!--Card content-->
+        <div class="card-body text-center">
+          <!--Category & Title-->
+         <a href="" class="grey-text">
+            <h5 class="title">am-dun-nuoc-thuy-tinh-T-602C-535-43-732 </h5>
+          </a>
+          
+    
+          <h4 class="font-weight-bold blue-text">
+            <strong>139$</strong>
+          </h4>
+          <h5>
+            <strong>
+              <a href="" class="dark-grey-text">Mua Ngay</a>
+            </strong>
+          </h5>
+    
+        </div>
+        <!--Card content-->
+    
+      </div>
+      <!--Card-->
+    
+    </div>
+    
+
+       </div>
+     </div>
+   </div>
+
+           
+
+
+
+       
+    
+         <div id="Microcontrollers" class="tabcontent">
+                <div  class="container"> 
+  <div  class="row  ">
+     
+    <div class="col-lg-3 col-md-4 col-sm-4">
+    
+      <!--Card-->
+       <div class="card ">
+    
+        <!--Card image-->
+        <div class="view overlay ">
+          <img src="../images/điều hòa phòng/quat-suoi-dien-sunhouse-shd2021.jpg" class="card-img-top" alt="">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--Card image-->
+    
+        <!--Card content-->
+        <div class="card-body text-center">
+          <!--Category & Title-->
+         <a href="" class="grey-text">
+            <h5 class="title">quạt sưởi điện sunhouse </h5>
+          </a>
+          
+    
+          <h4 class="font-weight-bold blue-text">
+            <strong>1.600.000 đ</strong>
+          </h4>
+          <h5>
+            <strong>
+              <a href="" class="dark-grey-text">Mua Ngay</a>
+            </strong>
+          </h5>
+    
+        </div>
+        <!--Card content-->
+    
+      </div>
+      <!--Card-->
+    
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-4">
+    
+      <!--Card-->
+       <div class="card ">
+    
+        <!--Card image-->
+        <div class="view overlay ">
+          <img src="../images/điều hòa phòng/quat-suoi-hotor-HT430-L10.jpg" class="card-img-top" alt="">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--Card image-->
+    
+        <!--Card content-->
+        <div class="card-body text-center">
+          <!--Category & Title-->
+         <a href="" class="grey-text">
+            <h5 class="title">quat-suoi-hotor-HT430-L10</h5>
+          </a>
+          
+    
+          <h4 class="font-weight-bold blue-text">
+            <strong>1.900.000</strong>
+          </h4>
+            <strong>
+              <a href="" class="dark-grey-text">Mua Ngay</a>
+            </strong>
+          </h5>
+    
+        </div>
+        <!--Card content-->
+    
+      </div>
+      <!--Card-->
+    
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-4">
+    
+      <!--Card-->
+       <div class="card ">
+    
+        <!--Card image-->
+        <div class="view overlay ">
+          <img src="../images/điều hòa phòng/quạt hơi nước mini 2021jpg.jpg" class="card-img-top" alt="">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--Card image-->
+    
+        <!--Card content-->
+        <div class="card-body text-center">
+          <!--Category & Title-->
+         <a href="" class="grey-text">
+            <h5 class="title">quạt hơi nước mini 2021 </h5>
+          </a>
+          
+    
+          <h4 class="font-weight-bold blue-text">
+            <strong>3.200.000 đ</strong>
+          </h4>
+          <h5>
+            <strong>
+              <a href="" class="dark-grey-text">Mua Ngay</a>
+            </strong>
+          </h5>
+    
+        </div>
+        <!--Card content-->
+    
+      </div>
+      <!--Card-->
+    
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-4">
+    
+      <!--Card-->
+       <div class="card ">
+    
+        <!--Card image-->
+        <div class="view overlay ">
+          <img src="../images/điều hòa phòng/quạt đứng.jpg" class="card-img-top" alt="">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--Card image-->
+    
+        <!--Card content-->
+        <div class="card-body text-center">
+          <!--Category & Title-->
+         <a href="" class="grey-text">
+            <h5 class="title">quạt đứng tiaksai</h5>
+          </a>
+          
+    
+          <h4 class="font-weight-bold blue-text">
+            <strong>2.400.000 đ</strong>
+          </h4>
+          <h5>
+            <strong>
+              <a href="" class="dark-grey-text">Mua Ngay</a>
+            </strong>
+          </h5>
+    
+        </div>
+        <!--Card content-->
+    
+      </div>
+      <!--Card-->
+    
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-4">
+    
+      <!--Card-->
+       <div class="card ">
+    
+        <!--Card image-->
+        <div class="view overlay ">
+          <img src="../images/điều hòa phòng/s-106_705c272cbe2e4a99a183df17c33637f2_master 2021.jpg" class="card-img-top" alt="">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--Card image-->
+    
+        <!--Card content-->
+        <div class="card-body text-center">
+          <!--Category & Title-->
+         <a href="" class="grey-text">
+            <h5 class="title">am-dun-nuoc-thuy-tinh-T-602C-535-43-732 </h5>
+          </a>
+          
+    
+          <h4 class="font-weight-bold blue-text">
+            <strong>139$</strong>
+          </h4>
+          <h5>
+            <strong>
+              <a href="" class="dark-grey-text">Mua Ngay</a>
+            </strong>
+          </h5>
+    
+        </div>
+        <!--Card content-->
+    
+      </div>
+      <!--Card-->
+    
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-4">
+    
+      <!--Card-->
+       <div class="card ">
+    
+        <!--Card image-->
+        <div class="view overlay ">
+          <img src="../images/điều hòa phòng/SHR-AW12C110_1.jpg" class="card-img-top" alt="">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--Card image-->
+    
+        <!--Card content-->
+        <div class="card-body text-center">
+          <!--Category & Title-->
+         <a href="" class="grey-text">
+            <h5 class="title">am-dun-nuoc-thuy-tinh-T-602C-535-43-732 </h5>
+          </a>
+          
+    
+          <h4 class="font-weight-bold blue-text">
+            <strong>139$</strong>
+          </h4>
+          <h5>
+            <strong>
+              <a href="" class="dark-grey-text">Mua Ngay</a>
+            </strong>
+          </h5>
+    
+        </div>
+        <!--Card content-->
+    
+      </div>
+      <!--Card-->
+    
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-4">
+    
+      <!--Card-->
+       <div class="card ">
+    
+        <!--Card image-->
+        <div class="view overlay ">
+          <img src="../images/điều hòa phòng/so-sanh-quat-dieu-hoa-quat-hoi-nuoc-2021.jpg" class="card-img-top" alt="">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--Card image-->
+    
+        <!--Card content-->
+        <div class="card-body text-center">
+          <!--Category & Title-->
+         <a href="" class="grey-text">
+            <h5 class="title">am-dun-nuoc-thuy-tinh-T-602C-535-43-732 </h5>
+          </a>
+          
+    
+          <h4 class="font-weight-bold blue-text">
+            <strong>139$</strong>
+          </h4>
+          <h5>
+            <strong>
+              <a href="" class="dark-grey-text">Mua Ngay</a>
+            </strong>
+          </h5>
+    
+        </div>
+        <!--Card content-->
+    
+      </div>
+      <!--Card-->
+    
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-4">
+    
+      <!--Card-->
+       <div class="card ">
+    
+        <!--Card image-->
+        <div class="view overlay ">
+          <img src="../images/điều hòa phòng/sươi.jpg" class="card-img-top" alt="">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--Card image-->
+    
+        <!--Card content-->
+        <div class="card-body text-center">
+          <!--Category & Title-->
+         <a href="" class="grey-text">
+            <h5 class="title">am-dun-nuoc-thuy-tinh-T-602C-535-43-732 </h5>
+          </a>
+          
+    
+          <h4 class="font-weight-bold blue-text">
+            <strong>139$</strong>
+          </h4>
+          <h5>
+            <strong>
+              <a href="" class="dark-grey-text">Mua Ngay</a>
+            </strong>
+          </h5>
+    
+        </div>
+        <!--Card content-->
+    
+      </div>
+      <!--Card-->
+    
+    </div>
+       </div>
+     </div>
+</div>
+           
+
+
+
+
+         <div id="module" class="tabcontent">
+            <div  class="container"> 
+  <div  class="row  ">
+    <div class="col-lg-3 col-md-4 col-sm-4">
+    
+      <!--Card-->
+       <div class="card ">
+    
+        <!--Card image-->
+        <div class="view overlay ">
+          <img src="../images/điều hòa phòng/điều hòa phòng lạnh.jpg" class="card-img-top" alt="">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--Card image-->
+    
+        <!--Card content-->
+        <div class="card-body text-center">
+          <!--Category & Title-->
+         <a href="" class="grey-text">
+            <h5 class="title">am-dun-nuoc-thuy-tinh-T-602C-535-43-732 </h5>
+          </a>
+          
+    
+          <h4 class="font-weight-bold blue-text">
+            <strong>139$</strong>
+          </h4>
+          <h5>
+            <strong>
+              <a href="" class="dark-grey-text">Mua Ngay</a>
+            </strong>
+          </h5>
+    
+        </div>
+        <!--Card content-->
+    
+      </div>
+      <!--Card-->
+    
+    </div>
+    
+         </div>
+      </div>
+    </div>
+  </div>
+      <div class="tabs ">
+        <a href="#">
+       <button class="tablinks "><i class="fa fa-angle-double-left"></i></button>
+ <button  class="tablinks active" data-electronic="allproducts" >1</button>
+         <button class="tablinks" data-electronic="Microcontrollers">2</button>
+         <button class="tablinks" data-electronic="module">3</button>
+         <button class="tablinks "><i class="fa fa-angle-double-right"></i></button>
+        </a>
+      </div>
+
+  
+   
+<!-- icon lên đầu trang -->
+<style type="text/css">
+  #six-top{
+  margin-left: 90%; 
+
+  }
+  .len{
+    font-size: 40px;
+  }
+</style>
+<div class="container">
+<div class="row" id='six-top'>
+  <div class="col-lg-12">
+<a class="len" href='javascript:top.window.scrollTo(0,0)' title='Lên đầu trang'><i class="fa fa-angle-double-up"></i></a>
+
+
+</div>
+</div>
+
+</div>
+ <div id="footer">
+<footer class="footer-distributed">
+
+           
+
+            <div class="footer-center">
+ <a href="/Đồ án cơ sở/index.html"><h3>TG ĐỒ GIA DỤNG </h3></a>
+                <div>
+                    <a href="https://www.google.com/maps/dir/15.9824742,108.249626/khoa+c%C3%B4ng+ngh%E1%BB%87+th%C3%B4ng+tin+v%C3%A0+truy%E1%BB%81n+th%C3%B4ng/@15.9776902,108.2455265,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3142108878ee1dbf:0xb466fcf06b910a38!2m2!1d108.2497562!2d15.9732418"><i class="fa fa-map-marker"></i></a>
+                    <p><span>30 MỸ ĐA ĐÔNG 8</span> Quận Ngũ Hành Sơn , TP Đà Nẵng</p>
+                    </div>
+    
+                    <div>
+                        <a href=""><i class="fa fa-phone"></i></a>
+                        <p>0832241244</p>
+                    </div>
+    
+                    <div>
+                        <a href=""><i class="fa fa-envelope"></i></a>
+                        <p>luhanh08082002@gmail.com</p>
+                    </div>
+    
+                </div>
+                 <div class="footer-left">
+
+                <a ><h3>NNT</h3></a>
+                <p class="footer-links">
+                    <a href="indexh.html" class="link-1">TRANG CHỦ</a></br>
+                    
+                    <a href="#">SẢN PHẨM</a>
+                
+                    <a href="">GIỚI THIỆU</a></br>
+                
+                    <a href="#">TIN TỨC</a>
+                    
+                    <a href="#">PHỤ KIỆN</a>
+                    
+                    <a href="#">LIÊN HỆ</a>
+                </p>
+
+                <p class="footer-company-name">Copy right © 2021 by luhanh</p>
+            </div>
+
+    
+                <div class="footer-right">
+    
+                    <p class="footer-company-about">
+                        <span>VỀ CHÚNG TÔI</span>
+                        Mọi thắc mắc của quý khách xin được gửi về địa chỉ email để được giải đáp.
+                    </p>
+    
+                    <div class="footer-icons">
+    
+                      <a href="https://www.facebook.com/luhanh08082002/" class="face"><i class="fa fa-facebook"></i></a>
+                      <a href="https://www.instagram.com/" class="insta"><i class="fa fa-instagram"></i></a>
+                      <a href="https://www.youtube.com/" class="youtu"><i class="fa fa-youtube"></i></a>
+                      <a href="https://twitter.com/?lang=en" class="twitter"><i class="fa fa-twitter"></i></a>
+    
+                    </div>
+
+            </div>
+
+        </footer>
+
+
+</div>
+
+<script src="../js/index.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

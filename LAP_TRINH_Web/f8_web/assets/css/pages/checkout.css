@@ -1,0 +1,158 @@
+.container__billing-details{
+    background-color: var(--white-color);
+    margin-bottom: 20px;
+
+}
+.billing__title{
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+.detail__item {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+.detail__item-name{
+    flex: 1;
+    display: flex;
+    flex-direction:column;
+}
+.detail__item-name label{
+    padding: 0 20px;
+
+}
+.detail__item input{
+   
+   flex: 1;
+   margin-left:15px ;
+   padding: 10px 20px;
+   margin-right: 15px;
+   outline: none;
+   border-radius: 3px;
+   border: 1px solid #333;
+}
+.detail__item-confirm{
+    
+    padding: 10px 20px;
+
+}
+
+.detail__item-confirm p{
+    color: #b2b2b2;
+    font-weight: 500;
+}
+.detail__item-confirm label{
+    color: #999;
+    font-weight: 700;
+}
+.detail__item-confirm input:checked{
+    background: greenyellow;
+    padding: 5px;
+    color: #999;
+    font-weight: 700;
+}
+
+/* order */
+.container__your-order{
+    padding: 20px;
+    background-color: white;
+}
+   
+.container__bill-order{
+    
+}
+.table-th__list-oder th{
+    font-size: 1.7rem;
+    font-weight: bold;
+
+}
+/* .table-td__list-oder td:last-child,
+.table-th__list-oder th:last-child{
+    display: flex;
+    justify-content: right;
+
+} */
+.bill__order-cart{
+    width: 100%;
+
+   
+   
+}
+    
+.table__td-img{
+    width: 80px;
+    height: 60px;
+   
+}
+.img__oder{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    border: 1px solid firebrick;
+}
+.table__th-total{
+    text-align: right;
+}
+.table__td-name{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #6f6f6f;
+    display: block;
+    height: 4rem;
+    line-height: 2rem;
+    overflow: hidden;
+   margin-top: 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    padding-right: 20px;
+
+
+
+}
+.table__td-total{
+    width: 110px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: right;
+    color: #6f6f6f;
+
+
+}
+
+.bill__order-subtotal {
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+.bill__order-subtotal h4,
+.bill__order-subtotal span{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+}
+
+.bill__order-total{
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding-top: 15px;
+    margin-top: 20px;
+    padding-bottom: 15px;
+}
+.bill__order-total h4{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+}
+.bill__order-total span{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #dd2222;
+}

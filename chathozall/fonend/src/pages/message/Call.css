@@ -1,0 +1,89 @@
+.chatrtc-container{
+    height: 100vh;
+    width: 100vw;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: #131324;
+    justify-content: center;
+    
+    }
+.fromcontainer{
+    height: 65vh;
+    width: 65vw; 
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 66% 34%;
+    @media screen and (min-width:720px){
+        grid-template-columns :35% 65%;
+        
+    }
+    }
+.videocall{
+    border-radius: 10px;
+    background-color:   #6C7B8B;
+    display: grid;
+    grid-template-rows: 85% 15%;     
+
+}
+.UserCall{
+    border-radius: 10px;
+    background-color: #6C7B8B;
+    display: grid;
+    grid-template-rows: 50% 20% 10%;
+    
+}
+.UserCall img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    margin: auto;
+}
+.UsercallText {
+    text-align: center;
+    color: aliceblue;
+}
+.UsercallText H3{
+    font-weight: bold;
+}
+.submit_usercall{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.submit_usercall button{
+    background-color: rgb(38, 124, 253);
+    padding: 7px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+}
+
+.icon-videocall{
+    display: flex;
+    align-items: center;
+    background-color: #86929c;
+    justify-content: center;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.icon_item{
+    background:#B4CDCD;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.icon_item:hover{
+    background-color:#9AC0CD;
+    
+}
+
+
+.itemselected{
+    background:#997af0;
+}
+
+
+

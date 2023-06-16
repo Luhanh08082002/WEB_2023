@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        user-select: none;
+        box-sizing: border-box;
+    }
+
+    .silebar {
+        width: 250px;
+        height: 100%;
+        background: #2A3F54;
+        position: fixed;
+        float: left;
+    }
+
+    .silebar .tenshop {
+        line-height: 75px;
+        font-weight: bold;
+        font-size: 30px;
+        color: white;
+        text-align: center;
+    }
+
+    .logo {
+        padding-bottom: 40px;
+    }
+
+    .logoanh {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        float: left;
+        padding: 2px;
+        background: lemonchiffon;
+        margin-left: 10px;
+    }
+
+    .logo p {
+        font-size: 15px;
+        padding-left: 100px;
+        padding-top: 4px;
+        color: grey;
+    }
+
+    .logo h6 {
+        font-size: 15px;
+        padding-left: 100px;
+        color: white;
+    }
+
+    .silebar>ul {
+        background: #2A3F54;
+        height: 100%;
+        /* list-style: none; */
+    }
+
+    .silebar>ul>li {
+        padding-left: 20px;
+    }
+
+    .silebar>ul>li:hover {
+        border-left: 2px solid cyan;
+        background: rgba(255, 255, 255, .05);
+    }
+
+    .silebar>ul>li>a {
+        line-height: 50px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+    }
+
+    .silebar>ul>li>a:hover {
+        color: cyan;
+    }
+
+    .silebar ul .list-menu {
+        display: block;
+    }
+
+    .silebar ul .list-menu li {
+        line-height: 45px;
+        font-size: 16px;
+        list-style: none;
+        margin-left: -20px;
+        border-left: 3px solid transparent;
+    }
+
+    .silebar ul .list-menu li:hover {
+        border-left-color: cyan;
+        background: rgba(255, 255, 255, .05);
+        text-shadow: rgb(0 0 0 / 25%) 0 -1px 0;
+        background: linear-gradient(#334556, #2C4257), #2A3F54;
+        box-shadow: rgb(0 0 0 / 25%) 0 1px 0, inset rgb(255 255 255 / 16%) 0 1px 0;
+    }
+
+    .silebar .list-menu li a {
+        padding-left: 40px;
+        text-decoration: none;
+        color: white;
+        font-family: time_sleep_until;
+    }
+
+    .silebar>ul>li>a span {
+        font-size: 16px;
+    }
+
+    .silebar>ul>li>.icon-home i {
+        padding-left: 122px;
+        font-size: 16px;
+    }
+
+    .silebar>ul>li>.icon-quanly i {
+        padding-left: 100px;
+        font-size: 16px;
+    }
+
+    .silebar ul .list-menu li a:hover {
+        color: cyan;
+    }
+
+    .thanhtren {
+        width: 100%;
+        height: 45px;
+        background: #EDEDED;
+        border-bottom: 1px solid #D9DEE4;
+    }
+
+    .thanhtren>ul {
+        margin-left: 1150px;
+        color: greenyellow;
+    }
+
+    .thanhtren>ul>li {
+        float: left;
+        line-height: 45px;
+        padding-right: 7px;
+        padding-left: 7px;
+        list-style: none;
+    }
+
+    .thanhtren>ul>li:hover {
+        background: rgba(0, 0, 0, 0.06);
+    }
+
+    .thanhtren>ul>li>a:hover {
+        color: black;
+    }
+
+    .thanhtren>ul>li>a {
+        text-decoration: none;
+    }
+
+    .thanhtren ul .menutren li {
+        list-style: none;
+        line-height: 35px;
+        display: none;
+    }
+
+    .thanhtren ul .menutren li a {
+        text-decoration: none;
+    }
+
+    .thanhtren>ul>li:hover .menutren li {
+        display: block;
+    }
+
+    .main {
+        margin-left: 260px;
+        margin-top: 10px;
+        width: 82%;
+        height: auto;
+    }
+</style>
+<div class="silebar">
+    <span class="tenshop">Cellphones Shop!</span>
+
+    <div class="logo">
+        <img class="logoanh" src="../images/z3612204183016_5d6602760a3a9fc718be6c03fc1fd676.jpg">
+        <p>welcome,<p>
+                <h6>TÔI LÀ CAO LINH CHI</h6>
+
+    </div>
+    <ul>
+        <li><a class="icon-home" href="../layout/home.html"><span class="fa fa-home"></span> Home <i class="fa fa-caret-down"></i></a>
+            
+        </li>
+        <li>
+            <a class="icon-quanly action" href=""> <span class="fa fa-home"></span> Quản Lý <i
+                    class="fa fa-caret-down"></i></a>
+            <ul class="list-menu">
+                <li><a href="">Quản Lý Danh Mục Sản Phẩm</a></li>
+                <li><a href="../layout/dplsanpham.html">Quản Lý Sản Phẩm</a></li>
+                <li><a href="#">Quản Lý Giỏ Hàng</a></li>
+                <li><a href="#">Quản Lý Nhân Viên</a></li>
+                <li><a href="#">Quản Lý Khách Hàng</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Báo Cáo</a></li>
+        <li><a href="#">Tài Khoản</a></li>
+    </ul>
+</div>
+<div class="thanhtren">
+    <ul>
+        <li><a href=""><i class="fa fa-bell"></i>  thông báo </a></li>
+        <li><a href=""><i class="fa fa-comment"></i> tin nhắn </a></li>
+      
+        <li>
+
+            <a class="taikhoan" href=""><i class="fa fa-user"></i> </a>
+            <ul class="menutren">
+                <li><a href="index.php?dangxuat=1">Đăng xuất</a></li>
+
+            </ul>
+        </li>
+      
+        <li>
+
+            <a class="taikhoan" href="">Tài Khoản</a>
+            <ul class="menutren">
+                <li><a href="login.php">Đăng Nhập</a></li>
+                <li><a href="">Đăng Ký</a></li>
+
+    </ul>
+
+</div>
+
+<style>
+    .ds {
+        width: 95.1%;
+        border-radius: 13px 13px 0px 0px;
+        -webkit-border-radius: 13px 13px 0px 0px;
+        -moz-border-radius: 13px 13px 0px 0px;
+        background: #92989c;
+        height: 35px;
+        line-height: 35px;
+        margin-left: 31px;
+        margin-top: 50px;
+    }
+
+    .ds p {
+        color: blanchedalmond;
+        font-size: 20px;
+        padding-left: 20px;
+    }
+
+    .dmsp {
+        width: 95%;
+        margin: 0 auto;
+        border: 2px solid #92989c;
+    }
+
+    .them {
+        height: 50px;
+    }
+
+    .them .a {
+        padding: 7px 7px;
+        color: white;
+        background: #303636;
+        font-size: 18px;
+        line-height: 50px;
+        text-decoration: none;
+        border-radius: 4px;
+    }
+
+    a:hover {
+        color: red;
+    }
+</style>
+<div class="main">
+    <div class=" container-fluid">
+        <div class="row">
+            <div class=" col-lg-12 ds">
+                <p>sản phẩm 1</p>
+            </div>
+        </div>
+        <div class="dmsp row">
+
+            <div class="col-lg-9">
+               sâfsdfdag
+                <style>
+                  .table {
+                    padding: 10px 10px;
+          
+                  }
+          
+                  table,
+                  th,
+                  td {
+                    border: 1px solid gray;
+                    font-weight: bold;
+                  }
+          
+                  table {
+                    /* border-collapse:collapse; */
+                    width: 100%;
+                    border-collapse: collapse;
+                    text-align: center;
+          
+          
+                  }
+          
+                  th {
+                    height: 30px;
+                    text-align: center;
+                    /* width: 30px; */
+                    background: #92989c;
+                  }
+          
+                  tr:hover {
+                    background-color: #ddd;
+                    cursor: pointer;
+                    box-shadow: inset 1px 0 0 #dadce0, inset -1px 0 0 #dadce0, 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+              z-index: 2;
+                  }
+                  .timkiem{
+                    padding: 30px 10px 15px 10px;
+                  }
+          
+                  fieldset {
+                    padding: 5px 7px;
+                  }
+                </style>
+                <div>
+                  <form class="timkiem" action="" method="post">
+                    <fieldset>
+                      <legend> Tìm Kiếm Sản Phẩm</legend>
+                      Từ khóa <input type="text" name="tukhoa">
+                      <input type="submit" name="timkiem" value="tìm kiếm">
+                    </fieldset>
+                  </form>
+                </div>
+                <div class="table">
+                  <table>
+          
+                    <tr style="color: indigo;">
+                      <th>STT</th>
+                      <th>Tên Sản Phẩm</th>
+                      <th>Mã Sản Phẩm</th>
+                      <th>Giá Tiền</th>
+                      <th>Danh Mục</th>
+                      <th>Số Lượng</th>
+                      <th>Hình Ảnh</th>
+                      <th>Nội Dung</th>
+                      <th> Hành Động</th>
+          
+                    </tr>
+                 
+                    <tr>
+                      <td>1</t>
+                      <td>Tên sản phẩm</th>
+                      <td>mã sản phẩm</th>
+                      <td>giá tiền</th>
+                      <td>danh mục điện thoại</th>
+                      <td>số lượng</th>
+                      <td><img src="../images/536e4fa7d723157d4c32.jpg" width="40px" height="40px" style="padding: 3px 3px;"></th>
+                      <td>nội dung</th>
+                      <td><a href="">xóa</a>| <a
+                          href="">Sửa</a></th>
+                    </tr>
+
+                    <tr>
+                        <td>2</t>
+                        <td>Tên sản phẩm</th>
+                        <td>mã sản phẩm</th>
+                        <td>giá tiền</th>
+                        <td>danh mục điện thoại</th>
+                        <td>số lượng</th>
+                        <td><img src="../../images/z3612169457086_92067c17c132dc5db9baa1af152d4288.jpg" width="40px" height="40px" style="padding: 3px 3px;"></th>
+                        <td>nội dung</th>
+                        <td><a href="">xóa</a>| <a
+                            href="">Sửa</a></th>
+                      </tr>
+                      <tr>
+                        <td>3</t>
+                        <td>Tên sản phẩm</th>
+                        <td>mã sản phẩm</th>
+                        <td>giá tiền</th>
+                        <td>danh mục điện thoại</th>
+                        <td>số lượng</th>
+                        <td><img src="../../images/z3612182381278_48eb558b8bfb1cbbc924f71f389b95a7.jpg" width="40px" height="40px" style="padding: 3px 3px;"></th>
+                        <td>nội dung</th>
+                        <td><a href="">xóa</a>| <a
+                            href="">Sửa</a></th>
+                      </tr>
+                      <tr>
+                        <td>4</t>
+                        <td>Tên sản phẩm</th>
+                        <td>mã sản phẩm</th>
+                        <td>giá tiền</th>
+                        <td>danh mục điện thoại</th>
+                        <td>số lượng</th>
+                        <td><img src="../../images/z3612188570965_3495f28d59179160de0f169832ab361d.jpg" width="40px" height="40px" style="padding: 3px 3px;"></th>
+                        <td>nội dung</th>
+                        <td><a href="">xóa</a>| <a
+                            href="">Sửa</a></th>
+                      </tr>
+                      <tr>
+                        <td>5</t>
+                        <td>Tên sản phẩm</th>
+                        <td>mã sản phẩm</th>
+                        <td>giá tiền</th>
+                        <td>danh mục điện thoại</th>
+                        <td>số lượng</th>
+                        <td><img src="../../images/z3612192709986_404362dfa742dbdad5fef252eca3c7f4.jpg" width="40px" height="40px" style="padding: 3px 3px;"></th>
+                        <td>nội dung</th>
+                        <td><a href="">xóa</a>| <a
+                            href="">Sửa</a></th>
+                      </tr>
+                      <tr>
+                        <td>6</t>
+                        <td>Tên sản phẩm</th>
+                        <td>mã sản phẩm</th>
+                        <td>giá tiền</th>
+                        <td>danh mục điện thoại</th>
+                        <td>số lượng</th>
+                        <td><img src="../../images/z3612198143876_87cd007e9cea49b295726f8e4997439c.jpg" width="40px" height="40px" style="padding: 3px 3px;"></th>
+                        <td>nội dung</th>
+                        <td><a href="">xóa</a>| <a
+                            href="">Sửa</a></th>
+                      </tr>
+                  </table>
+                </div>
+                <div class="them col-lg-12">
+                  <a class="a" href="../layout/themsp.html"> thêm Sản Phẩm</a>
+                </div >
+                
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</div>
+</body>
+</html>

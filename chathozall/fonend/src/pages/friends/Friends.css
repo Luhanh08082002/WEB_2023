@@ -1,0 +1,80 @@
+.container_fiends{
+    display: flex;
+    
+}
+.sidebarss_friends {
+width: 400px;
+height: 100vh;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+overflow: hidden;
+}
+
+.sidebar_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.sidebar_top h3{
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.icon_setting span .i{
+    padding: 10px;
+    background-color: gray;
+    border-radius: 50%;
+
+
+}
+.sidebar_listitem {
+    display:flex;
+    align-items: center;
+}
+
+.sidebarWrappers ul li {
+    list-style: none;
+    padding: 10px 10px;
+    margin-right: 10px;
+    margin-left: -30px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sidebarWrappers ul li:hover{
+    
+    background-color: aquamarine;
+    
+}
+
+.sidebarWrappers ul li svg{
+    padding: 5px 5px;
+    border-radius: 50%;
+    background-color: blue;
+    margin-right: 10px;
+}
+
+
+/* top_friends_req */
+.right_bar_list{
+    width: 90%;
+}
+.friend_request{
+    padding: 10px 20px;
+}
+
+.top_friends_req {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aqua;
+    margin-bottom: 20px;
+}
+
+.list_friends {
+    width: 200px;
+    height: 250px;
+    background-color: aqua;
+}
